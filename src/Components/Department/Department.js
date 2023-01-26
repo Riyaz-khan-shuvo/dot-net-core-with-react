@@ -10,7 +10,7 @@ const Department = () => {
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
-    console.log(data);
+    
 
     return (
         <div>
