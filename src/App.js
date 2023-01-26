@@ -16,11 +16,11 @@ function App() {
       element: <Home />
     },
     {
-      path: "/Department",
+      path: "/department",
       element: <Department />
     },
     {
-      path: "/edit/:dptId",
+      path: "/department/edit/:dptId",
       element: <EditDepartment />
     },
     {

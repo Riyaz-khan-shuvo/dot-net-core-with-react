@@ -30,10 +30,10 @@ const Department = () => {
                                     <th scope="row">{index + 1} </th>
                                     <td> {data.departmentName} </td>
                                     <td>
-                                        <Link to={`/edit/${data.id}`} className="text-success">
+                                        <Link to={`/department/edit/${data.id}`} className="text-success" >
                                             <i className="bi bi-pencil-square"></i>
                                         </Link>
-                                        <Link to={"/"} className="text-danger ms-3">
+                                        <Link to={`/department/delete/${data.id}`} className="text-danger ms-3">
                                             <i className="bi bi-trash"></i>
                                         </Link>
                                     </td>
