@@ -5,6 +5,7 @@ import Employee from './Components/Employee/Employee';
 import Department from './Components/Department/Department';
 import EditDepartment from './Components/Department/EditDepartment';
 import DeleteDepartment from './Components/Department/DeleteDepartment';
+import CreateDepartment from './Components/Department/CreateDepartment';
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +20,10 @@ function App() {
     {
       path: "/department",
       element: <Department />
+    },
+    {
+      path: "/department/create",
+      element: <CreateDepartment />
     },
     {
       path: "/department/edit/:dptId",
