@@ -7,13 +7,13 @@ import Layout from '../Layout/Layout';
 const Department = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch(`${departmentUrl}`)
+        fetch(`${departmentUrl}/GetDepartments`)
             .then(res => res.json())
             .then(data => setData(data))
     }, [data])
 
     const handleDelete = (e, id) => {
-        fetch(`${departmentUrl}/${id}`, {
+        fetch(`${departmentUrl}/DeleteDepartment/${id}`, {
             method: "DELETE"
         })
             .then(res => res.text())
@@ -22,7 +22,6 @@ const Department = () => {
                     alert("Department deleted successful!!!")
                 }
             })
-
     }
 
     return (

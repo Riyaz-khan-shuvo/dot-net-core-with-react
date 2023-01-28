@@ -11,7 +11,7 @@ const EditDepartment = () => {
     });
 
     useEffect(() => {
-        axios.get(`${departmentUrl}/id?id=${dptId}`)
+        axios.get(`${departmentUrl}/GetDepartmentById/id?id=${dptId}`)
             .then(data => setData(data.data))
     }, [dptId])
 
@@ -31,7 +31,7 @@ const EditDepartment = () => {
         const departmentName = dptRef.current.value;
         const d = { id: dptId, departmentName }
         console.log(d)
-        fetch(`${departmentUrl}/${dptId}`, {
+        fetch(`${departmentUrl}/UpdateDepartment/${dptId}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -23,7 +23,7 @@ const CreateDepartment = () => {
         const departmentName = departmentRef.current.value;
         const department = { departmentName }
         console.log(department);
-        axios.post(`${departmentUrl}`, department)
+        axios.post(`${departmentUrl}/CreateDepartment`, department)
             .then(res => {
                 if (res.data.id) {
                     alert("Department added successful!!!");
