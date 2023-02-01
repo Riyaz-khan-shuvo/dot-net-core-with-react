@@ -6,6 +6,7 @@ import Department from './Components/Department/Department';
 import EditDepartment from './Components/Department/EditDepartment';
 import DeleteDepartment from './Components/Department/DeleteDepartment';
 import CreateDepartment from './Components/Department/CreateDepartment';
+import CreateEmployee from './Components/Employee/CreateEmployee';
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +37,10 @@ function App() {
     {
       path: "/employee",
       element: <Employee />
+    },
+    {
+      path: "/Employee/create",
+      element: <CreateEmployee />
     }
   ]);
 

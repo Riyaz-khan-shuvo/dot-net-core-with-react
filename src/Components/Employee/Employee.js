@@ -19,7 +19,7 @@ const Employee = () => {
                 <Layout>
                     <div className="container">
                         <div className='my-3 text-end '>
-                            <Link to={"/Employee/create"} className="btn btn-primary">Add Department</Link>
+                            <Link to={"/Employee/create"} className="btn btn-primary">Add Employee</Link>
                         </div>
                         <table className="table table-hover table-striped">
                             <thead>
